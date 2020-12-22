@@ -1,0 +1,133 @@
+:root {
+    /*
+    Colors used:
+    #05386b
+    #379683
+    #5cdb95
+    #8ee4af
+    #edf5e1
+    */
+
+    --body-bg-color: #aaeeb3;
+
+    --nav-header-title-color: #e1e1f5;
+    --nav-header-title-bg-color: #379683;
+    --nav-ul-bg-color: #5cdb95;
+    --nav-a-color: #05386b; /*text color */
+    --nav-a-hover-color: #05386b;
+    --nav-a-hover-bg-color: #8ee4af;
+    --nav-a-active-bg-color: #edf5e1;
+
+    /* --main-section-bg-color: #5cdb95; */
+    --main-header-color: #05386b;
+    --main-p-text-color: #030953;
+    --main-code-bg-color: #e3f8e6;
+  }
+
+body {
+    background-color: var(--body-bg-color);
+}
+
+nav {
+    position: fixed;
+    left: 0;
+    margin-top: -8px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: var(--nav-ul-bg-color);
+}
+
+nav header {
+    color: var(--nav-header-title-color);
+    background-color: var(--nav-header-title-bg-color);
+    text-transform: uppercase;
+    text-align: center;
+    padding: 30px 0 30px 0;
+    margin: 0;
+    /* border: 3px solid red; */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+nav a {
+    padding: 30px 15px;
+    color: var(--nav-a-color);
+    display: block; /* w/out display block, you must hover over the text to click on the link. With display block you can hover over any part of the block to click the link.*/
+    /* text-decoration: none; remove underline on a (and possbily removes other stuff) */
+}
+
+nav li a:active {
+    background-color: var(--nav-a-active-bg-color);
+}
+
+nav a:hover {
+    /* background-color: #5e5399; */
+    background-color: var(--nav-a-hover-bg-color);
+}
+
+
+main section {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 20px;
+    margin-left: 325px;
+    margin-right: 40px;
+    /* border-style: solid; */
+    padding-top: 40px;
+
+}
+
+main header {
+    font-size: 22px;
+    /* color: #514080; */
+    color: var(--main-header-color);
+}
+
+main p {
+    color: var(--main-p-text-color);
+    margin-left: 20px;
+}
+
+main ul {
+    color: var(--main-p-text-color);
+    margin-left: 20px;
+}
+
+main code {
+    background-color: var(--main-code-bg-color);
+    padding: 1px;
+    font-size: 15px;
+}
+
+#While_statements p {
+    margin-bottom:-12px;
+}
+
+
+
+
+
+/* element > element selects only those elements which are direct children of a parent. It looks only one level down the markup structure and not further deep down. */
+
+@media (max-width: 660px) {
+    main section {
+        margin-left: 210px;
+    }
+
+    main p {
+        margin-left: 0;
+    }
+
+    nav {
+        font-size: 12px;
+    }
+
+}
