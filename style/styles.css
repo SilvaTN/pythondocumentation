@@ -101,6 +101,10 @@ main ul {
     margin-left: 20px;
 }
 
+main li {
+    margin-bottom: 6px;
+}
+
 main code {
     background-color: var(--main-code-bg-color);
     padding: 1px;
