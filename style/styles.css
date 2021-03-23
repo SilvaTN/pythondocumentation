@@ -16,7 +16,7 @@
     --nav-a-color: #05386b; /*text color */
     --nav-a-hover-color: #05386b;
     --nav-a-hover-bg-color: #8ee4af;
-    --nav-a-active-bg-color: #edf5e1;
+    --nav-a-active-bg-color: #a5e9b3;
 
     /* --main-section-bg-color: #5cdb95; */
     --main-header-color: #05386b;
@@ -111,9 +111,6 @@ main code {
     font-size: 15px;
 }
 
-#While_statements p {
-    margin-bottom:-12px;
-}
 
 
 
