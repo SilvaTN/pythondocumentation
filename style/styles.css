@@ -1,27 +1,54 @@
 :root {
     /*
-    Colors used:
-    #05386b
-    #379683
-    #5cdb95
-    #8ee4af
-    #edf5e1
+    grey: rgb(61, 61, 61);
+    black
+    Colors used from https://color.adobe.com/create/color-wheel:
+    #EBEB60  yellow
+    #62F249  green
+    #4DDB9D  blue green -->appropriate contrast: #1A9DD5  -->darker: 
+    #49CAF2  light blue
+    #465AEB  blue
     */
 
-    --body-bg-color: #aaeeb3;
+    /* green, yellow, with a bit of blue layout:
+    
+    --body-bg-color:  hsl(62, 100%, 93%);
 
-    --nav-header-title-color: #e1e1f5;
-    --nav-header-title-bg-color: #379683;
-    --nav-ul-bg-color: #5cdb95;
-    --nav-a-color: #05386b; /*text color */
-    --nav-a-hover-color: #05386b;
-    --nav-a-hover-bg-color: #8ee4af;
-    --nav-a-active-bg-color: #edf5e1;
+    --nav-header-title-color: #ffffff;
+    --nav-header-title-bg-color: hsl(147, 50%, 47%);
+    --nav-ul-bg-color: hsl(61, 100%, 72%);
+    --nav-a-color: black;
+    --nav-a-hover-color: #ffffff;
+    --nav-a-hover-bg-color: rgb(116, 125, 255);
+    --nav-a-active-bg-color: rgb(98, 106, 219);
+    --nav-border: rgba(13, 13, 14, 0);
 
-    /* --main-section-bg-color: #5cdb95; */
-    --main-header-color: #05386b;
-    --main-p-text-color: #030953;
-    --main-code-bg-color: #e3f8e6;
+    --main-header-color: black;
+    --main-header-bg:  hsl(62, 100%, 93%);
+    --main-header-border: 
+    --main-p-text-color: black;
+    --main-code-bg-color: rgba(97, 108, 255, 0.37);
+    --main-code-text: #323236;
+    --main-a-text: rgb(64, 74, 218); */
+    
+    --body-bg-color:  #ffffe3;
+
+    --nav-header-title-color: #ffffff;
+    --nav-header-title-bg-color: #4c60fc;
+    --nav-ul-bg-color: #ffff68;
+    --nav-a-color: rgb(61, 61, 61);
+    --nav-a-hover-color: black;
+    --nav-a-hover-bg-color: #b0ccff;
+    --nav-a-active-bg-color: rgb(98, 106, 219);
+    --nav-border: rgba(13, 13, 14, 0);
+
+    --main-header-color: rgb(61, 61, 61);
+    --main-header-bg:  hsla(62, 100%, 93%, 0);
+    --main-header-border: red;
+    --main-p-text-color: black;
+    --main-code-bg-color: #b1dce9;
+    --main-code-text: #363632;
+    --main-a-text: rgb(13, 27, 221);
   }
 
 body {
@@ -38,6 +65,7 @@ nav {
     font-size: 20px;
     font-family: 'Josefin Sans', sans-serif;
     background-color: var(--nav-ul-bg-color);
+    /* border-right: 3px solid var(--nav-border); */
 }
 
 nav header {
@@ -72,16 +100,17 @@ nav li a:active {
 nav a:hover {
     /* background-color: #5e5399; */
     background-color: var(--nav-a-hover-bg-color);
+    color: var(--nav-a-hover-color);
 }
 
 
 main section {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     line-height: 20px;
-    margin-left: 325px;
-    margin-right: 40px;
+    margin-left: 300px;
+    margin-right: 0px;
     /* border-style: solid; */
-    padding-top: 40px;
+    padding-top: 10px;
 
 }
 
@@ -89,11 +118,20 @@ main header {
     font-size: 22px;
     /* color: #514080; */
     color: var(--main-header-color);
+    background-color: var(--main-header-bg);
+    margin-left: 40px;
+    padding-top: 30px;
+}
+
+#sub-title {
+    margin-bottom: 5px;
+    font-size: 24px;
 }
 
 main p {
     color: var(--main-p-text-color);
-    margin-left: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
 main ul {
@@ -107,14 +145,14 @@ main li {
 
 main code {
     background-color: var(--main-code-bg-color);
+    color: var(--main-code-text);
     padding: 1px;
     font-size: 15px;
 }
 
-#While_statements p {
-    margin-bottom:-12px;
+main a {
+    color: var(--main-a-text);
 }
-
 
 
 
